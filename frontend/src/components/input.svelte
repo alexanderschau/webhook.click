@@ -29,10 +29,20 @@
   </div>
 </div>
 <div class="flex">
-  <a target="_blank" href={`/receive/${eventName}`} class="button mx-2 flex-1">
+  <a
+    target="_blank"
+    rel="noopener"
+    href={`/receive/${eventName}`}
+    class="button mx-2 flex-1"
+  >
     await call
   </a>
-  <a target="_blank" href={`/send/${eventName}`} class="button mx-2 flex-1">
+  <a
+    target="_blank"
+    rel="noopener"
+    href={`/send/${eventName}`}
+    class="button mx-2 flex-1"
+  >
     send trigger
   </a>
 </div>
