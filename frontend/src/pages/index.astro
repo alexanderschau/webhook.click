@@ -8,18 +8,34 @@ import InputComponent from "../components/input.svelte";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>webhook</title>
+    <meta name="description" content="⚡️ The easiest webhook on the planet" />
   </head>
-  <body class="font-robotoMono">
-    <div
-      class="absolute h-full w-full top-0 left-0 flex flex-col justify-center"
-    >
-      <div class="flex justify-center">
-        <div class="flex-1 px-3 max-w-xl text-center">
-          <div class="font-bold text-2xl my-2">webhook.click</div>
-          <div class="opacity-60">The easiest webhook on the planet</div>
-          <InputComponent client:visible />
+  <body
+    class="absolute top-0 left-0 h-full w-full font-robotoMono bg-white dark:bg-black text-black dark:text-white"
+  >
+    <div class="flex h-full flex-col">
+      <div class="flex-1 top-0 left-0 flex flex-col justify-center">
+        <div class="flex justify-center">
+          <div class="flex-1 px-3 max-w-xl text-center">
+            <div class="font-bold text-2xl my-2">webhook.click</div>
+            <div class="opacity-60">⚡️ The easiest webhook on the planet</div>
+            <InputComponent client:visible />
+          </div>
         </div>
       </div>
+
+      <footer
+        class="bg-black text-white dark:ring ring-white border-white py-5 px-10 text-center"
+      >
+        made by
+        <a
+          class="underline"
+          target="_blank"
+          rel="noopener"
+          href="https://alexander.sbs"
+          >@Alexander Schau</a
+        >
+      </footer>
     </div>
   </body>
 </html>

@@ -12,7 +12,9 @@
   let eventName = genID(20);
 </script>
 
-<div class="flex flex-wrap my-4 px-2 bg-gray-100 w-full rounded-lg">
+<div
+  class="flex flex-wrap my-4 px-2 bg-black-900 dark:bg-black-100 w-full rounded-lg"
+>
   <input
     type="text"
     bind:value={eventName}
@@ -21,16 +23,26 @@
   />
   <div
     on:click={() => (eventName = genID(20))}
-    class="bg-white hover:bg-gray-100 px-2 py-1 my-2 rounded-lg border-black border cursor-pointer whitespace-nowrap flex-grow"
+    class="bg-white dark:bg-black hover:bg-black-900 dark:hover:bg-black-100 px-2 py-1 my-2 rounded-lg border-black dark:border-white border cursor-pointer whitespace-nowrap flex-grow"
   >
     random event
   </div>
 </div>
 <div class="flex">
-  <a target="_blank" href={`/receive/${eventName}`} class="button mx-2 flex-1">
+  <a
+    target="_blank"
+    rel="noopener"
+    href={`/receive/${eventName}`}
+    class="button mx-2 flex-1"
+  >
     await call
   </a>
-  <a target="_blank" href={`/send/${eventName}`} class="button mx-2 flex-1">
+  <a
+    target="_blank"
+    rel="noopener"
+    href={`/send/${eventName}`}
+    class="button mx-2 flex-1"
+  >
     send trigger
   </a>
 </div>

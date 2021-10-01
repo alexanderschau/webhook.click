@@ -33,5 +33,5 @@
 }
 
 .button {
-  @apply bg-white hover:bg-gray-100 px-4 py-2 rounded-lg border-black border cursor-pointer;
+  @apply bg-white dark:bg-black hover:bg-black-900 dark:hover:bg-black-100 px-4 py-2 rounded-lg border-black dark:border-white border cursor-pointer;
 }
