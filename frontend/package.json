@@ -1,0 +1,20 @@
+{
+  "name": "@webhook.click/website",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "format": "prettier -w ./src"
+  },
+  "devDependencies": {
+    "@astrojs/renderer-svelte": "^0.1.2",
+    "astro": "^0.20.8",
+    "prettier": "^2.4.1",
+    "prettier-plugin-astro": "^0.0.7",
+    "prettier-plugin-svelte": "^2.4.0",
+    "tailwindcss": "^2.2.16"
+  }
+}

@@ -1,0 +1,25 @@
+---
+import "../styles/global.css";
+import InputComponent from "../components/input.svelte";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>webhook</title>
+  </head>
+  <body class="font-robotoMono">
+    <div
+      class="absolute h-full w-full top-0 left-0 flex flex-col justify-center"
+    >
+      <div class="flex justify-center">
+        <div class="flex-1 px-3 max-w-xl text-center">
+          <div class="font-bold text-2xl my-2">webhook.click</div>
+          <div class="opacity-60">The easiest webhook on the planet</div>
+          <InputComponent client:visible />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
